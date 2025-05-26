@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: traceability
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: tracks
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-key: ${JWT_ACCESS_TOKEN_SECRET}
+appDescription: "Traceability System"
+appVersion: "1.0"
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
