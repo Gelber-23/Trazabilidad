@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ITrackRepository  extends MongoRepository<TrackEntity, Long> {
     List<TrackEntity> findAllByIdOrder(Long idOrder);
+    List<TrackEntity> findAllByIdRestaurant (Long idRestaurant);
+    List<TrackEntity> findAllByIdEmployee(Long idEmployee);
 }

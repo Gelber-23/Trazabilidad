@@ -8,4 +8,5 @@ public class ValidationsConstant {
     public static final String  ID_EMPLOYEE_REQUIRED_MESSAGE ="Id employee is required";
     public static final String  PREVIOUS_STATE_REQUIRED_MESSAGE ="Previous state is required";
     public static final String  NEW_STATE_REQUIRED_MESSAGE ="New state is required";
+    public static final String  ID_RESTAURANT_REQUIRED_MESSAGE ="ID restaurant is required";
 }

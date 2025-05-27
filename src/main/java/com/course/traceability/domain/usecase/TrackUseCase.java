@@ -74,7 +74,10 @@ public class TrackUseCase implements ITrackServicePort {
 
         }
 
+        if (track.getIdRestaurant() == null || track.getIdRestaurant() <= 0) {
+            errors.add(ValidationsConstant.ID_RESTAURANT_REQUIRED_MESSAGE);
 
+        }
         if (track.getIdEmployee() == null) {
             errors.add(ValidationsConstant.ID_EMPLOYEE_REQUIRED_MESSAGE);
 

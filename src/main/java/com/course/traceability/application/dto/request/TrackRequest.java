@@ -23,6 +23,9 @@ public class TrackRequest {
     @NotNull(message = ValidationsConstant.ID_EMPLOYEE_REQUIRED_MESSAGE)
     @Min(value = ValuesConstants.MIN_VALUE_FOR_NUMBERS, message = ValidationsConstant.ID_EMPLOYEE_REQUIRED_MESSAGE)
     private Long idEmployee;
+    @NotNull(message = ValidationsConstant.ID_EMPLOYEE_REQUIRED_MESSAGE)
+    @Min(value = ValuesConstants.MIN_VALUE_FOR_NUMBERS, message = ValidationsConstant.ID_EMPLOYEE_REQUIRED_MESSAGE)
+    private Long idRestaurant;
     @NotBlank(message = ValidationsConstant.PREVIOUS_STATE_REQUIRED_MESSAGE)
     private String previousState;
     @NotBlank(message = ValidationsConstant.NEW_STATE_REQUIRED_MESSAGE)

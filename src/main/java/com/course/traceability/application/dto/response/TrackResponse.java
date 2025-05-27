@@ -12,6 +12,7 @@ public class TrackResponse {
     private Long idOrder;
     private Long idClient;
     private Long idEmployee;
+    private Long idRestaurant;
     private String email;
     private Date date;
     private String previousState;

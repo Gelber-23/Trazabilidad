@@ -50,6 +50,25 @@ public class ControllerAdvisor {
                         ex.getMessage()
                 ));
     }
+
+    @ExceptionHandler(UserNotOwnerException.class)
+    public ResponseEntity<Map<String, String>> handleUserNotOwner(
+            UserNotOwnerException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body(Collections.singletonMap(
+                        MESSAGE,
+                        ex.getMessage()
+                ));
+    }
+    @ExceptionHandler(RestaurantNotFoundException.class)
+    public ResponseEntity<Map<String, String>> handleRestaurantNotFound(
+            RestaurantNotFoundException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body(Collections.singletonMap(
+                        MESSAGE,
+                        ex.getMessage()
+                ));
+    }
     @ExceptionHandler(TrackValidationException.class)
     public ResponseEntity<Map<String, List<String>>> handleTrackValidation(
             TrackValidationException ex) {
